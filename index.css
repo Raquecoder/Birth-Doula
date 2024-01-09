@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 1rem;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #717271;
+    margin: auto;
+    line-height: 2rem;
+}
+
+/*===Header===*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 0.8em;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+} 
+
+.logo {
+    width: 250px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+.nav-items {
+    list-style-type: none;
+    text-transform: uppercase;
+    align-items: center;
+} 
+
+.nav-links {
+    text-decoration: none;
+    color:  rgba(110, 99, 99, 0.979);
+    cursor: pointer;
+} 
+
+.nav-links:hover {
+    color: rgba(110, 99, 99, 0.979);
+    border-bottom: 2px rgba(110, 99, 99, 0.979) solid;
+}
+
+.free-consultation-btn {
+    background-color: blueviolet;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.free-consultation-btn:hover {
+    background-color: rgb(68, 20, 114);
+}
+.open-btn,
+.close-btn {
+    display: none;
+}
+
+/*====MAIN===+*/
+.main {
+    display:flex;
+    width: 100%;
+    height: 95vh;
+    background-color: #a5b8b0;
+}
+
+.text-container {
+    text-align: left;
+    width: 60%;
+    padding: 50px;
+    color: #ffffffde;
+}
+
+.title,
+.subtitle{
+    margin: 40px;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.background-image {
+    height:95vh;
+}
+
+/*===MAIN SECTION===*/
+.main-section {
+    display: flex;
+    width:100%;
+    height: 60vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em;
+    color:#717271;
+}
+
+.main-section-title{
+    font-size: 2rem;
+   
+}
+
+.main-section-paragraph {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+/*====INTRO====*/
+.intro {
+    background-color: #c7a6c7;
+    padding: 5em;
+    display: flex;
+    width: 100%;
+}
+
+.text-intro-container{
+    width: 50%;
+    margin: auto 2em;
+}
+
+.title-intro {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 20px;
+} 
+
+.intro-paragraph {
+    color: #717271;
+    font-size: 1.3rem;
+    margin: 20px ;
+}
+
+.intro-profile-container {
+    width: 50%;
+}
+
+.profile-picture {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+/*====SERVICES===*/
+.services-container {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.services {
+    background-color: #fff;
+    width: 50%;
+    margin: auto 2em;
+
+}
+
+.birth-planning {
+    width: 50%;
+    background-color: #a5b8b0;
+    color: #fff;
+}
+
+.birth-list{
+    list-style:circle;
+    margin: 2em;
+    font-size: 1.5rem;
+}
+
+/*=====RESOURCES====*/
+.resources-container {
+    height: 80vh;
+    width: 100%;
+    padding: 8em;
+    text-align: center;
+    background-color: #6a327a;
+    color: #ffff;
+    font-size: 1.3rem;
+}
+ 
+/*====REVIEWS====*/
+.reviews-container {
+    display: flex;
+    margin: 30px;
+    font-size: 1.2rem;
+}
+.reviews-image,
+.reviews-text {
+   width: 50%;
+}
+
+.reviews-photo {
+    border-radius: 50%;
+}
+
+span {
+    color: rgb(68, 20, 114);
+    font-weight: bolder;
+}
+/*=====FOOTER===*/
+.footer {
+    background-color:#6a327a;
+    height: 20vh;
+    text-align: center;
+    padding-top: 2em;
+}
+
+@media(max-width:600px){
+    main,
+    .intro,
+    .services-container,
+    .reviews-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container,
+    .image-container{
+        width:100%;
+    }
+    .title,
+    .subtitle {
+        margin: auto;
+    }
+    .background-image{
+        height: 50vh;
+    }
+
+    /*===MAIN SECTION===*/
+    .main-section {
+        width:100%;
+        padding: 60px 20px;
+    }
+    /*===INTRO===*/
+    .intro {
+        padding:0;
+    }
+    
+    .text-intro-container {
+        margin:auto;
+        padding:15px;
+        width:100%;
+    }
+
+    .intro-profile-container {
+        width: 100%;
+    }
+
+    .profile-picture {
+        max-width: 60%;
+    }
+    
+    .services {
+        width: 100%;
+        margin: auto;
+        padding:15px;
+    }
+
+    .birth-planning{
+        width:100%;
+    }
+    /*===RESOURCES===*/
+    .resources-container{
+        width: 100%;
+        padding:15px;
+        height: 40vh;
+    }
+    /*==REVIEWS ==*/
+    .reviews-photo{
+        max-width: 60%;
+    }
+
+    /*====MOBILE NAVIGATION===*/
+    .open-btn,
+    .close-btn {
+        display: block;
+        border:none;
+        font-size: 2rem;
+        font-weight: bolder;
+        background-color: transparent;
+        color:#6a327a;
+    }
+    .navigation {
+      display: none;
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        position: absolute;
+        background-color:white;
+        font-size: 1.2rem;
+        top:0;
+        left: 10%;
+        bottom:0;
+        right:0;
+        
+    }
+    
+}
+
+   
+
+
+   
